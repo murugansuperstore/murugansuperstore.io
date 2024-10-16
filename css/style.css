@@ -69,28 +69,20 @@ section{
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem; /* Adjusted padding for mobile */
-    background: #1abc9c;
-    box-shadow: var(--box-shadow);
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 5px; /* Add some padding */
+    background-color: #f8f8f8; /* Background color */
 }
-
-.header .logo img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo img {
+    max-width: 30%; /* Responsive logo */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    display: block;
+    margin-left: 10%;
+    /* Maintain aspect ratio */
 }
 /* Basic Reset */
 * {
@@ -100,56 +92,41 @@ section{
 }
 
 /* Navbar Styles */
-.header {
-    background-color: #1abc9c; /* Optional: Background color for header */
-}
 
-.header .navbar {
+.navbar {
     display: flex;
-    align-items: center;
-    padding: 0;
+    flex-direction: row; /* Stack links vertically */
+    width: 100%; /* Full width for mobile */
+    padding: 0; /* Remove default padding */
     margin: 0;
-    flex-wrap: wrap; /* Allow wrapping */
+    margin-left: -23%;
+
+     /* Remove default margin */
 }
 
-.header .navbar a {
-    font-size: 1.5rem; /* Adjust font size for mobile */
-    margin: 0.5rem; /* Reduced margin for links */
-    color: var(--black);
-    padding: 0.5rem; /* Reduced padding for links */
+.navbar a {
+    text-align: left; /* Center-align text */
+    padding: 15px; /* Add padding for clickable area */
+    font-size: 18px; /* Adjust font size for readability */
+    color: #333; /* Link color */
+    text-decoration: none;
+    /* Remove underline */
 }
 
-/* Glowing Effect for Links */
-
-
-#menu-btn{
-    display: none;
+/* Add hover effect on links */
+.navbar a:hover {
+    background-color: #e0e0e0; /* Background color on hover */
 }
-
-
-
-        /* Golden accent for the heading with serif font */
-
-
         /* Styling for the Thirukkural verse with a modern sans-serif font */
-        #kural-verse {
-            font-family: 'Raleway', sans-serif; /* Clean sans-serif font */
-            font-size: 1.8em;
-            font-weight: 600;
-            color: #e74c3c; /* Red for the verse */
-            margin: 20px 0;
-        }
 
-        #kural-verse:hover {
-            color: #c0392b;
-        }
 
-        .thiruvalluvar-img {
-            max-width: 100px;
-            margin-left: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+
+.thiruvalluvar-img {
+    /* Auto left and right margins for centering */
+    max-width: 80%; /* Limit the image width */
+    height: auto;
+
+}
 
 .home{
     display: flex;
@@ -158,7 +135,7 @@ section{
     background: url(../image/banner-bg.webp) no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 22rem;
+    padding-top: -15rem;
     padding-bottom: 10rem;
 }
 
@@ -170,6 +147,7 @@ section{
 .home .content h3{
     color:var(--black);
     font-size: 4rem;
+
 }
 
 .home .content h4
@@ -527,24 +505,30 @@ video {
     }
 
     .header {
-        padding: 1rem;
-        flex-direction: column;
-         /* Less padding for mobile header */
-
-         /* Less padding for mobile header */
+        flex-direction: row; /* Change to row layout */
+        justify-content: space-between; /* Space out elements */
     }
 
-     .header .navbar {
-        display: none; /* Hide navbar by default */
-        flex-direction: column; /* Stack links vertically */
-        width: 100%; /* Full width for navbar */
-        background: #1abc9c; /* Match header background */
+    .navbar {
+        flex-direction: row; /* Arrange links horizontally */
     }
 
-    .header .navbar.active {
-        display: flex; /* Show navbar when active */
+    .navbar a {
+        padding: 10px 15px; /* Adjust padding for larger screens */
+        font-size: 16px; /* Smaller font size for desktop */
     }
 
+    #kural-verse {
+        margin-top: 0; /* Remove margin for larger screens */
+    }
+
+    .image-content {
+        margin-top: 0; /* Remove margin for larger screens */
+    }
+
+    .thiruvalluvar-img {
+        max-width: 50%; /* Adjust image size for larger screens */
+    }
     section {
         padding: 1rem;
         display: block; /* Show menu button */
