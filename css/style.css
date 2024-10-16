@@ -70,62 +70,67 @@ section{
 
 .header {
     display: flex;
-    flex-direction: row; /* Stack items vertically */
+    flex-direction: column; /* Stack items vertically on mobile */
     align-items: center; /* Center items horizontally */
-    padding: 5px; /* Add some padding */
-    background-color: #f8f8f8; /* Background color */
+    padding: 10px;
+    background-color: #0ba26b; /* Blue solid background color */
+    color: white;
 }
+
+/* Center the logo */
+.logo {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    width: 30%;
+    margin-bottom: 10px; /* Space between logo and navbar */
+}
+
 .logo img {
-    max-width: 30%; /* Responsive logo */
-    height: auto;
-    display: block;
-    margin-left: auto;
-    display: block;
-    margin-left: 10%;
-    /* Maintain aspect ratio */
-}
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    max-width: 40%; /* Adjusted size for mobile screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #fff; /* Optional: Add a border around the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a nice effect */
 }
 
-/* Navbar Styles */
-
+/* Navbar styles */
 .navbar {
     display: flex;
-    flex-direction: row; /* Stack links vertically */
-    width: 100%; /* Full width for mobile */
-    padding: 0; /* Remove default padding */
-    margin: 0;
-    margin-left: -23%;
-
-     /* Remove default margin */
+    flex-direction: row; /* Stack links vertically on mobile */
+    width: 100%;
+    justify-content: center;
+    text-align: center; /* Center-align text */
 }
 
 .navbar a {
-    text-align: left; /* Center-align text */
-    padding: 15px; /* Add padding for clickable area */
-    font-size: 18px; /* Adjust font size for readability */
-    color: #333; /* Link color */
+    padding: 10px; /* Reduce padding for mobile */
+    font-size: 16px; /* Adjust font size for readability on smaller screens */
+    color: #333;
     text-decoration: none;
-    /* Remove underline */
+    justify-content: center;
 }
 
-/* Add hover effect on links */
 .navbar a:hover {
     background-color: #e0e0e0; /* Background color on hover */
 }
-        /* Styling for the Thirukkural verse with a modern sans-serif font */
 
+/* Thirukkural verse styles */
+#kural-verse {
+    margin-top: 10px; /* Adjusted space for mobile */
+    font-size: 16px; /* Smaller font size for mobile */
+    text-align: center; /* Center-align text for better mobile readability */
+}
 
+/* Image content styles */
+.image-content {
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-top: 10px; /* Reduce space above the image */
+}
 
 .thiruvalluvar-img {
-    /* Auto left and right margins for centering */
-    max-width: 80%; /* Limit the image width */
-    height: auto;
-
+    max-width: 10%; /* Adjust image size for mobile */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .home{
@@ -135,7 +140,7 @@ section{
     background: url(../image/banner-bg.webp) no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: -15rem;
+    padding-top: 22rem;
     padding-bottom: 10rem;
 }
 
@@ -147,7 +152,6 @@ section{
 .home .content h3{
     color:var(--black);
     font-size: 4rem;
-
 }
 
 .home .content h4
