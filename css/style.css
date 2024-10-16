@@ -68,17 +68,19 @@ section{
     color:#fff;
 }
 
-.header{
+.header {
     position: fixed;
-    top:0; left:0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:2rem 9%;
-    background:#1abc9c;
+    padding: 1rem 2rem; /* Adjusted padding for mobile */
+    background: #1abc9c;
     box-shadow: var(--box-shadow);
-
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .header .logo img{
@@ -103,57 +105,21 @@ section{
 }
 
 .header .navbar {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: right; /* Center items vertically */
-    padding: 1rem; /* Padding around the navbar */
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .header .navbar a {
-    font-size: 1.7rem; /* Font size for links */
-    margin: 0 1rem; /* Margin between links */
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    margin: 0.5rem; /* Reduced margin for links */
     color: var(--black);
-    padding: 10px 25px;/* Use your defined color variable */
-    text-decoration: none; /* Remove underline from links */
-    position: relative; /* To position the pseudo-elements */
-    overflow: hidden; /* Ensure that the pseudo-elements do not overflow */
-    transition: color 0.3s; /* Smooth color transition */
+    padding: 0.5rem; /* Reduced padding for links */
 }
 
 /* Glowing Effect for Links */
-.header .navbar a:before {
-    content: "";
-    background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: 400%;
-    z-index: -1; /* Place behind the link */
-    filter: blur(5px); /* Blur effect for the glow */
-    width: 80%;
-    height: 80%;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition */
-}
-
-.header .navbar a:hover {
-    color: orange; /* Change color on hover */
-}
-
-/* Show the glowing effect on hover */
-.header .navbar a:hover:before {
-    opacity: 1; /* Show the glowing effect on hover */
-}
 
 
 #menu-btn{
@@ -561,19 +527,33 @@ video {
     }
 
     .header {
-        padding: 1.5rem; /* Less padding for mobile header */
+        padding: 1rem;
+        flex-direction: column;
+         /* Less padding for mobile header */
+
+         /* Less padding for mobile header */
+    }
+
+     .header .navbar {
+        display: none; /* Hide navbar by default */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for navbar */
+        background: #1abc9c; /* Match header background */
+    }
+
+    .header .navbar.active {
+        display: flex; /* Show navbar when active */
     }
 
     section {
-        padding: 2rem; /* Maintain consistent padding */
+        padding: 1rem;
+        display: block; /* Show menu button */
+        cursor: pointer; /* Pointer cursor for interaction */
+        font-size: 2rem; /* Maintain consistent padding */
     }
 
     #menu-btn {
         display: inline-block; /* Show menu button on mobile */
-    }
-
-    .header .search-form {
-        width: 90%; /* Adjust search form width */
     }
 
     .heading {
