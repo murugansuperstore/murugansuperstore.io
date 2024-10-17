@@ -509,7 +509,7 @@ video {
 .footer .credit span{
     color:var(--orange);
 }
-@media screen and (min-width: 200px) and (max-width: 600px)  {
+@media screen and (min-width: 200px) and (max-width: 800px)  {
     html {
         font-size: 55%; /* Adjust font size for better readability on mobile */
     }
