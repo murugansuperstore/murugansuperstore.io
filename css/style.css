@@ -37,7 +37,7 @@ section{
 
 .heading{
     text-align: center;
-    padding:2rem 0;
+    padding:2rem auto;
     padding-bottom: 3rem;
     font-size: 3.5rem;
     color:var(--black);
@@ -72,7 +72,7 @@ section{
     display: flex;
     flex-direction: column; /* Stack items vertically on mobile */
     align-items: center; /* Center items horizontally */
-    padding: 5px;
+    padding: 2px;
     background-color: #0ba26b; /* Blue solid background color */
     color: white;
 }
@@ -103,7 +103,7 @@ section{
 }
 
 .navbar a {
-    padding: 10px; /* Reduce padding for mobile */
+    padding: 2px; /* Reduce padding for mobile */
     font-size: 16px; /* Adjust font size for readability on smaller screens */
     color: #333;
     text-decoration: none;
@@ -503,7 +503,7 @@ video {
     color:var(--orange);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     html {
         font-size: 55%; /* Adjust font size for better readability on mobile */
     }
@@ -521,7 +521,7 @@ video {
     }
 
     .navbar a {
-        padding: 2rem 2rem; /* Adjust padding for larger screens */
+        padding: 2rem 1rem; /* Adjust padding for larger screens */
         font-size: 16px; /* Smaller font size for desktop */
     }
 
@@ -577,7 +577,8 @@ video {
     }
 
     .blogs .box-container .box img {
-        height: 30rem; /* Adjust blog image height */
+        height: 30rem;
+         margin: 2rem auto;/* Adjust blog image height */
     }
 
     /* Ensure responsive adjustments for other components */
