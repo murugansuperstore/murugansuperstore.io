@@ -100,24 +100,24 @@ section{
     width: 100%;
     justify-content: center;
     align-items: center; /* Center-align links */
+    background-color: transparent; /* Remove box background */
+    padding: 10px; /* Add some padding */
 }
 
 .navbar a {
     display: inline-block;
-    flex-direction: column;/* Make links behave like buttons */
-    padding: 2px 2px; /* Increase padding for button-like appearance */
-    margin: 5px 0; /* Add spacing between buttons */
-    font-size: 16px; /* Font size for readability */
-    color: #333;
+    padding: 10px 20px; /* Adjust padding for better mobile look */
+    margin: 5px 0; /* Add spacing between links */
+    font-size: 16px; /* Adjust font size for readability */
+    color: #fff; /* White text for contrast against background */
+    background-color: transparent; /* No background color for mobile */
     text-decoration: none;
-    background-color: #f8f8f8; /* Light background for button */
-
 }
 
 .navbar a:hover {
-    background-color: #e0e0e0; /* Change background on hover *
+    color: var(--orange); /* Change text color on hover */
+    background-color: transparent; /* No background change */
 }
-
 /* Thirukkural verse styles */
 #kural-verse {
     margin-top: 10px; /* Adjusted space for mobile */
@@ -524,14 +524,16 @@ video {
         max-width: 80px; /* Set width to 80% for larger size */
     }
 
-    .navbar {
-        flex-direction: column; /* Arrange links horizontally on larger screens */
+     .navbar {
+        flex-direction: column; /* Stack links vertically on mobile */
         justify-content: center;
+        align-items: center;
     }
 
     .navbar a {
-        margin: 0 10px; /* Add space between buttons */
-        padding: 12px 24px; /* Slightly larger buttons for desktop */
+        margin: 0 5px; /* Spacing between links */
+        padding: 12px 20px; /* Larger padding for touch targets */
+        font-size: 1.6rem; /* Slightly larger text for mobile */
     }
 
     #kural-verse {
