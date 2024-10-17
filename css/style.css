@@ -502,82 +502,44 @@ video {
 .footer .credit span{
     color:var(--orange);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     html {
-        font-size: 55%; /* Adjust font size for readability on mobile */
+        font-size: 62.5%; /* Larger base font size for desktop */
     }
 
     .header {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
+        padding: 2rem;
     }
 
-    .logo img {
-        max-width: 80%;
+    .logo {
+        margin-right: auto;
     }
 
     .navbar {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
     .navbar a {
-        padding: 1rem; /* Reduce padding for mobile */
-        font-size: 14px; /* Smaller font size for mobile */
+        padding: 0 1.5rem;
+        font-size: 1.8rem;
     }
 
     #kural-verse {
-        font-size: 14px; /* Smaller font size for readability */
-        margin-top: 0;
+        font-size: 2rem;
     }
 
     .image-content {
-        margin-top: 0;
+        margin-top: 2rem;
     }
 
     .thiruvalluvar-img {
-        max-width: 15%; /* Adjust image size for mobile */
+        max-width: 10%;
     }
 
-    .home .content h3 {
-        font-size: 3rem; /* Smaller heading */
-    }
-
-    .home .content h4 {
-        font-size: 2.5rem; /* Smaller heading */
-    }
-
-    .home .content p {
-        font-size: 1.5rem;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer .box-container .box {
-        margin-bottom: 1rem;
-    }
-
-    .features .box-container .box {
-        padding: 2rem 1rem;
-    }
-
-    .categories .box-container .box {
-        padding: 2rem 1rem;
-    }
-
-    .products .product-slider .box {
-        padding: 2rem 1rem;
-    }
-
-    .blogs .box-container .box img {
-        height: 25rem; /* Adjust blog image height */
-    }
-
-    /* Adjustments for other elements */
-    .btn {
-        font-size: 1.5rem;
-        padding: 0.8rem 2rem;
+    .footer .credit {
+        font-size: 1.6rem;
     }
 }
