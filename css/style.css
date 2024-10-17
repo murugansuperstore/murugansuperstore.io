@@ -81,7 +81,7 @@ section{
 .logo {
     display: flex;
     justify-content: center; /* Center the logo */
-    width: 50%;
+    width: 20%;
     margin-bottom: 10px; /* Space between logo and navbar */
 }
 
@@ -517,7 +517,7 @@ video {
     }
 
     .logo img{
-         max-width: 40%;
+         max-width: 20%;
     }
 
     .navbar {
