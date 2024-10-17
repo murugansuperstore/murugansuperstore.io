@@ -105,7 +105,7 @@ section{
 .navbar a {
     display: inline-block;
     flex-direction: column;/* Make links behave like buttons */
-    padding: 10px 20px; /* Increase padding for button-like appearance */
+    padding: 2px 2px; /* Increase padding for button-like appearance */
     margin: 5px 0; /* Add spacing between buttons */
     font-size: 16px; /* Font size for readability */
     color: #333;
