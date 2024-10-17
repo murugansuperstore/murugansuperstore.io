@@ -86,7 +86,7 @@ section{
 }
 
 .logo img {
-    max-width: 40%; /* Adjusted size for mobile screens */
+    max-width: 800%; /* Adjusted size for mobile screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     border: 2px solid #fff; /* Optional: Add a border around the circle */
@@ -512,6 +512,11 @@ video {
         flex-direction: column; /* Change to row layout */
         justify-content: space-between; /* Space out elements */
     }
+
+    .logo{
+        margin-top: 0;
+    }
+         
 
     .logo img{
          max-width: 30%;
