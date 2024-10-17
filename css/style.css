@@ -81,12 +81,12 @@ section{
 .logo {
     display: flex;
     justify-content: center; /* Center the logo */
-    width: 40%;
+    width: 50%;
     margin-bottom: 20px; /* Space between logo and navbar */
 }
 
 .logo img {
-    max-width: 30%; /* Adjusted size for mobile screens */
+    max-width: 40%; /* Adjusted size for mobile screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     border: 2px solid #fff; /* Optional: Add a border around the circle */
@@ -103,7 +103,8 @@ section{
 }
 
 .navbar a {
-    display: inline-block; /* Make links behave like buttons */
+    display: inline-block;
+    flex-direction: column/* Make links behave like buttons */
     padding: 10px 20px; /* Increase padding for button-like appearance */
     margin: 5px 0; /* Add spacing between buttons */
     font-size: 16px; /* Font size for readability */
