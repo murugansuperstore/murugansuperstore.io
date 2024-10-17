@@ -111,14 +111,11 @@ section{
     color: #333;
     text-decoration: none;
     background-color: #f8f8f8; /* Light background for button */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for button effect */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .navbar a:hover {
-    background-color: #e0e0e0; /* Change background on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    background-color: #e0e0e0; /* Change background on hover *
 }
 
 /* Thirukkural verse styles */
