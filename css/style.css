@@ -99,19 +99,25 @@ section{
     flex-direction: column; /* Stack links vertically on mobile */
     width: 100%;
     justify-content: center;
-    text-align: center; /* Center-align text */
+    align-items: center; /* Center-align links */
 }
 
 .navbar a {
-    padding: 2px; /* Reduce padding for mobile */
-    font-size: 16px; /* Adjust font size for readability on smaller screens */
+    display: inline-block; /* Make links behave like buttons */
+    padding: 10px 20px; /* Increase padding for button-like appearance */
+    margin: 5px 0; /* Add spacing between buttons */
+    font-size: 16px; /* Font size for readability */
     color: #333;
     text-decoration: none;
-    justify-content: center;
+    background-color: #f8f8f8; /* Light background for button */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for button effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #e0e0e0; /* Background color on hover */
+    background-color: #e0e0e0; /* Change background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
 }
 
 /* Thirukkural verse styles */
