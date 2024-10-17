@@ -96,7 +96,7 @@ section{
 /* Navbar styles */
 .navbar {
     display: flex;
-    flex-direction: row; /* Stack links vertically on mobile */
+    flex-direction: column; /* Stack links vertically on mobile */
     width: 100%;
     justify-content: center;
     text-align: center; /* Center-align text */
