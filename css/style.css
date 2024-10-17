@@ -509,7 +509,7 @@ video {
     }
 
     .header {
-        flex-direction: row; /* Change to row layout */
+        flex-direction: column; /* Change to row layout */
         justify-content: space-between; /* Space out elements */
     }
 
