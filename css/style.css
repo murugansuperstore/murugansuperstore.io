@@ -81,12 +81,12 @@ section{
 .logo {
     display: flex;
     justify-content: center; /* Center the logo */
-    width: 30%;
+    width: 50%;
     margin-bottom: 10px; /* Space between logo and navbar */
 }
 
 .logo img {
-    max-width: 800%; /* Adjusted size for mobile screens */
+    max-width: 80%; /* Adjusted size for mobile screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     border: 2px solid #fff; /* Optional: Add a border around the circle */
@@ -519,7 +519,7 @@ video {
          
 
     .logo img{
-         max-width: 30%;
+         max-width: 80%;
     }
 
 
