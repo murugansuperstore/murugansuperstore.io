@@ -518,7 +518,7 @@ video {
     }
 
     .navbar a {
-        padding: 10px 15px; /* Adjust padding for larger screens */
+        padding: 5px 8px; /* Adjust padding for larger screens */
         font-size: 16px; /* Smaller font size for desktop */
     }
 
