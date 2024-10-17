@@ -527,13 +527,13 @@ video {
     }
 
     .navbar {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; /* Arrange links horizontally on larger screens */
+        justify-content: center;
     }
 
     .navbar a {
-        padding: 2rem 1rem; /* Adjust padding for larger screens */
-        font-size: 16px; /* Smaller font size for desktop */
+        margin: 0 10px; /* Add space between buttons */
+        padding: 12px 24px; /* Slightly larger buttons for desktop */
     }
 
     #kural-verse {
