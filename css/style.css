@@ -72,7 +72,7 @@ section{
     display: flex;
     flex-direction: column; /* Stack items vertically on mobile */
     align-items: center; /* Center items horizontally */
-    padding: 10px;
+    padding: 5px;
     background-color: #0ba26b; /* Blue solid background color */
     color: white;
 }
@@ -514,11 +514,14 @@ video {
     }
 
     .navbar {
-        flex-direction: row; /* Arrange links horizontally */
+        flex-direction: colum;
+        text-align: center;
+        /* Arrange links horizontally */
+        /* Arrange links horizontally */
     }
 
     .navbar a {
-        padding: 1px 2px; /* Adjust padding for larger screens */
+        padding: 2rem 2rem; /* Adjust padding for larger screens */
         font-size: 16px; /* Smaller font size for desktop */
     }
 
@@ -574,7 +577,7 @@ video {
     }
 
     .blogs .box-container .box img {
-        height: 20rem; /* Adjust blog image height */
+        height: 30rem; /* Adjust blog image height */
     }
 
     /* Ensure responsive adjustments for other components */
